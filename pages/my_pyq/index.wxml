@@ -1,0 +1,53 @@
+<navigator url="../pyq-detaile/pyq-detaile?trendId={{item.trendId}}" class="friendWrap"
+  wx:for="{{circleList}}" wx:key="*this"
+  bindtap="clickFriendList"
+>
+  <view class="friendHead">
+    <view class="touxiang">
+      <image class="image"></image>
+    </view>
+    <view class="friendInfo">
+      <view class="friendName">
+        用户名
+        <text class="iconfont icon-xingbie-nan man"></text>
+      </view>
+      <view class="friendSign">这个人很酷，什么也没有留下</view>
+      <view class="option iconfont icon-shenglvehao"></view>
+    </view>
+  </view>
+  <view class="friendBody">
+    <view class="friendContent">{{item.trendInfo}}</view>
+    <view class="image-list" >
+      <image class="image" catchtap="previewImage" 
+      wx:for="{{item.imgUrl}}" wx:key="*this" wx:for-item="image"
+      src="{{image}}" 
+      data-trendId="{{item.trendId}}"
+      data-index="{{index}}"></image>
+    </view>
+  </view>
+  <view class="typeWrap">
+    <view class="contentType">
+      <text class="iconfont icon-huati"
+      wx:if="{{item.trendLabel!=''}}"
+      > {{item.trendLabel}}</text>
+    </view>
+  </view>
+  <view class="handle-area">
+    <view class="handleLeft">{{item.createTime}}</view>
+    <view class="handleRight" >
+      <text class="iconfont icon-fenxiang"> 分享</text>
+      <text class="iconfont icon-xiaoxi"> {{item.trendCommentInfo.length}}</text>
+      <text class="iconfont icon-dianzan_kuai" catchtap="clickLove"
+      data-index="{{item.trendId}}"
+      > {{item.supportOpenId.length}}</text>
+    </view>
+  </view>
+  <view class="friendComment">
+    <view class="comment" wx:for="{{item.trendCommentInfo}}" wx:for-item="comment"
+    wx:key="index" wx:if="{{index<3}}">
+      <text class="user">{{comment.userName}} : </text>
+      <text>{{comment.commentContent}}</text>
+    </view>
+    <view class="more" wx:if="{{item.trendCommentInfo.length>3}}">共 {{item.trendCommentInfo.length}} 条评论</view>
+  </view>
+</navigator>

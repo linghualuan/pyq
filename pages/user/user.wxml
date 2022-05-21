@@ -1,0 +1,50 @@
+<view class="user_info_wrap">
+    <view class="userHead">
+        <view class="userIcon">
+            <image class="image" src="" />
+        </view>
+        <view class="userInfo">
+            <view class="userName">不负韶华</view>
+            <view class="identify"><text class="iconfont icon-renzheng"></text> 未认证</view>
+        </view>
+        <navigator url="../personalData/personalData" class="userEdit">查看/编辑资料</navigator>
+    </view>
+    <view class="stateWrap">
+        <navigator url="">
+            <view class="number">0</view>
+            <view class="stateName">我的动态</view>
+        </navigator>
+        <navigator url="">
+            <view class="number">8</view>
+            <view class="stateName">被点赞的</view>
+        </navigator>
+        <navigator url="">
+            <view class="number">12</view>
+            <view class="stateName">最近访客</view>
+        </navigator>
+    </view>
+</view>
+<view class="optionsWrap">
+    <view class="Options" bindtap="myTrend">
+        <text class="content iconfont icon-dongtai"
+        bindtap="myCicle"
+        >我的动态</text>
+        <text class="jiantou iconfont icon-dayoujian"></text>
+    </view>
+    <view class="options">
+        <text class="content iconfont icon-renzheng1"> 身份认证</text>
+        <text class="jiantou iconfont icon-dayoujian"></text>
+    </view>
+    <view class="options">
+        <text class="conten iconfont icon-tuijian"> 推荐给好友</text>
+        <text class="jianTou iconfont icon-dayoujian"></text>
+    </view>
+    <view class="options">
+        <text class="content iconfont icon-kefu"> 客服反馈</text>
+        <text class="jiantou iconfont icon-dayoujian"></text>
+    </view>
+    <view class="options">
+        <text class="content iconfont icon-jiaose"> 关于我们</text>
+        <text class="jiantou iconfont icon-dayoujian"></text>
+    </view>
+</view>

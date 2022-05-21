@@ -1,0 +1,13 @@
+<view class="discribeMyself">
+    <textarea placeholder="描绘出你心中理想的对象，遇见属于你的那个Ta！"cols="30" rows="10"
+    bindblur="bindblur"
+    ></textarea>
+</view>
+<view class="guide">
+    <view class="otherWrite">看看别人怎么写</view>
+    <view class="content">
+        自我介绍 [1]  是向别人展示你自我介绍 [1]  好不好，甚至直接关系到你给别人的第一印象的好坏及以后交往的顺利与否。同时，也是认识自我的手段。
+        自我介绍 [1]  是每一个职场中人都必然要经历的一件事情，只不过，有的人一年用不上几次，而有的人则一个星期可能需要做N次。众所周知，自我介绍是日常工作中与陌生人建立关系、打开局面的一种非常重要的手段，因此，让自己通过自我介绍 [1]  或得到对方的认识甚至认可，一种非常重要的职场技术。
+    </view>
+</view>
+<button type="primary" bindtap="handleSubmit">提交</button>

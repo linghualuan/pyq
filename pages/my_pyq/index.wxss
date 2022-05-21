@@ -1,0 +1,112 @@
+page {
+  background-color: #f5f5f5;
+}
+.friendWrap {
+  background-color: white;
+  margin: 20rpx;
+  border-radius: 10px;
+  padding-bottom: 2rpx;
+}
+.friendWrap .friendHead {
+  padding: 10px;
+  display: flex;
+}
+.friendWrap .friendHead .touxiang {
+  padding-right: 10px;
+}
+.friendWrap .friendHead .touxiang .image {
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  background-color: yellow;
+}
+.friendWrap .friendHead .friendInfo {
+  margin-top: 7rpx;
+  position: relative;
+}
+.friendWrap .friendHead .friendInfo .friendName {
+  font-size: 28rpx;
+  font-weight: 600;
+}
+.friendWrap .friendHead .friendInfo .friendName .man {
+  color: #28bcf7;
+}
+.friendWrap .friendHead .friendInfo .friendSign {
+  font-size: 24rpx;
+  color: #999797;
+}
+.friendWrap .friendHead .friendInfo .option {
+  position: absolute;
+  top: 10rpx;
+  right: -220rpx;
+}
+.friendWrap .friendBody .friendContent {
+  padding: 0 12px;
+  font-size: 30rpx;
+}
+.friendWrap .friendBody .image-list {
+  margin-top: 15rpx;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8rpx;
+}
+.friendWrap .friendBody .image-list .image {
+  border-radius: 20rpx;
+  width: 220rpx;
+  height: 220rpx;
+  background-color: #f3f3f3;
+  margin-bottom: 10rpx;
+  /*让图片下边和右边产生边距*/
+  margin-left: 10rpx;
+}
+.friendWrap .typeWrap {
+  margin-top: 10rpx;
+  margin-left: 25rpx;
+  margin-bottom: 10rpx;
+}
+.friendWrap .typeWrap .contentType text {
+  display: inline-block;
+  height: 55rpx;
+  line-height: 55rpx;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0 15rpx;
+  background-color: aquamarine;
+  font-size: 28rpx;
+  color: #444444;
+}
+.friendWrap .handle-area {
+  display: flex;
+  position: relative;
+}
+.friendWrap .handle-area .handleLeft {
+  position: relative;
+  left: 30rpx;
+  top: 8rpx;
+  font-size: 26rpx;
+}
+.friendWrap .handle-area .handleRight {
+  position: relative;
+  right: -150rpx;
+}
+.friendWrap .handle-area .handleRight text {
+  margin-right: 15px;
+  color: #999797;
+}
+.friendWrap .friendComment {
+  margin: 20rpx;
+  border-radius: 10px;
+  padding: 0 20rpx;
+  background-color: #f8f8f8;
+}
+.friendWrap .friendComment .comment .user {
+  font-size: 26rpx;
+  color: #3535f8;
+}
+.friendWrap .friendComment .comment text {
+  font-size: 26rpx;
+}
+.friendWrap .friendComment .more {
+  color: #3535f8;
+  font-size: 26rpx;
+}

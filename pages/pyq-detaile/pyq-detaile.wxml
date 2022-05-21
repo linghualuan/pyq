@@ -1,0 +1,91 @@
+<view class="friendWrap" wx:for="{{detailList}}" wx:key="detailList.openId">
+  <view class="friendHead">
+    <view class="touxiang">
+      <image class="image"></image>
+    </view>
+    <view class="friendInfo">
+      <view class="friendName">
+        用户名
+        <text class="iconfont icon-xingbie-nan man"></text>
+      </view>
+      <view class="friendSign">这个人很酷，什么也没有留下</view>
+    </view>
+  </view>
+  <view class="friendBody">
+    <view class="friendContent">{{item.trendInfo}}</view>
+    <view class="image-list">
+      <image class="image" catchtap="previewImage" 
+      wx:for="{{item.imgUrl}}" wx:key="*this" wx:for-item="image"
+      src="{{image}}" 
+      data-trendId="{{item.trendId}}"
+      data-index="{{index}}"></image>
+    </view>
+  </view>
+  <view class="handle-area">
+    <view class="handleLeft">{{item.createTime}}</view>
+    <view class="handleRight">
+      <text class="iconfont icon-fenxiang">分享</text>
+      <!-- <text class="iconfont icon-xiaoxi">211</text> -->
+      <text class="iconfont icon-dianzan_kuai"
+      catchtap="clickLove"
+      data-index="{{item.trendId}}"
+      > {{item.supportOpenId.length}}</text>
+    </view>
+  </view>
+  <view class="comentWrap">
+    <view class="comentHead">评论 {{item.trendCommentInfo.length}}</view>
+    <view class="friendHead">
+      <view class="touxiang">
+        <image class="image"></image>
+      </view>
+      <view class="friendInfo">
+        <view class="friendName">
+          用户名
+          <text class="iconfont icon-xingbie-nan man"></text>
+        </view>
+        <view class="friendSign">这个人很酷，什么也没有留下</view>
+      </view>
+    </view>
+    <view class="Coments">
+      <view class="majorComents">
+        <view class="commentDetail">这条评论是主评论，多写一点让它换行！多一点让它换行！！！</view>
+        <view class="commentHandel">
+          <text class="time">10小时前</text>
+          <text class="iconfont icon-dianzan_kuai"> 1</text>
+        </view>
+      </view>
+      <view class="subordinateWrap">
+        <view class="subordinate" wx:for="{{item.trendCommentInfo}}" wx:for-item="comment" wx:key="index"
+        >
+          <view class="nickName">
+            {{comment.userName}}
+            <text class="iconfont icon-xingbie-nv:before" style="color: rgb(250, 125, 146);"></text>
+          </view>
+          <view class="content">{{comment.commentContent}}</view>
+          <view class="commentHandel">
+            <text class="time">{{comment.commentTime}}</text>
+            <text class="iconfont icon-dianzan_kuai"> 1</text>
+          </view>
+        </view>
+        <!-- <view class="subordinate">
+          <view class="nickName">
+            匿名村民2
+            <text class="iconfont icon-xingbie-nan:before" style="color: rgb(40, 188, 247);"></text>
+          </view>
+          <view class="content">注册半个月，认识的第N个朋友。</view>
+          <view class="commentHandel">
+            <text class="time">8小时前</text>
+            <text class="iconfont icon-dianzan_kuai"> 18</text>
+          </view>
+          <view class="otherComents">展示剩下的23条回复</view>
+        </view> -->
+      </view>
+    </view>
+  </view>
+</view>
+<view class="commentInput" wx:for="{{detailList}}" wx:key="detailList.openId">
+  <view class="input"> 走心评论，温暖你我...</view>
+  <text class="iconfont icon-fenxiang">分享</text>
+  <text class="iconfont icon-xiaoxi"> {{item.trendCommentInfo.length}}</text>
+  <text class="iconfont icon-dianzan_kuai"> {{item.supportOpenId.length}}</text>
+</view>

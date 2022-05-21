@@ -1,0 +1,74 @@
+<view class="detailWrap">
+    <view class="basicInfo">
+        <view class="icon"></view>
+        <view class="basic1"> 基本资料</view>
+        <navigator class="edit">编辑</navigator>
+    </view>
+    <view class="nameWrap">
+        <view class="name">不负韶华 <text class="iconfont icon-xingbie-nan"></text></view>
+        <view class="position iconfont icon-weizhi"> 河南 郑州</view>
+    </view>
+    <view class="ageWrap">
+        <view class="age">20岁</view>
+        <view class="height">177cm</view>
+        <view class="star">双子座</view>
+    </view>
+    <view class="lableWrap">
+        <view class="lable">
+            <text> 职业 : </text>学生 
+        </view>
+        <view class="lable">
+            <text> 脱单目标 : </text>计划一年内脱单 
+        </view>
+    </view>
+</view>
+<view class="introduceWrap">
+    <view class="introduceHead">
+        <view class="icon"></view>
+        <view class="aboutMe">关于我</view>
+        <navigator url="../personalEdit/index" class="edit">编辑</navigator>
+    </view>
+    <view class="introduceMyself">
+        自我介绍 [1]  是每一个职场中人都必然要经历的一件事情，只不过，有的人一年用不上几次，而有的人则一个星期可能需要做N次。众所周知，自我介绍是日常工作中与陌生人建立关系、打开局面的一种非常重要的手段，因此，让自己通过自我介绍 [1]  或得到对方的认识甚至认可，一种非常重要的职场技术。
+    </view>
+</view>
+<view class="hobbyWrap">
+    <view class="hobbyHead">
+        <view class="icon"></view>
+        <view class="hobby">兴趣爱好</view>
+        <navigator url="../hobby/index" class="edit">编辑</navigator>
+    </view>
+    <view class="hobbyContent">
+        爱好编程 爱好听歌 爱好电影
+    </view>
+</view>
+<view class="hobbyWrap">
+    <view class="hobbyHead">
+        <view class="icon"></view>
+        <view class="hobby">感情观</view>
+        <navigator url="../emotion/index" class="edit">编辑</navigator>
+    </view>
+    <view class="hobbyContent">
+        随缘 随缘 随缘
+    </view>
+</view>
+<view class="hobbyWrap">
+    <view class="hobbyHead">
+        <view class="icon"></view>
+        <view class="hobby">心仪的Ta</view>
+        <navigator url="../lovePeople/index" class="edit">编辑</navigator>
+    </view>
+    <view class="hobbyContent">
+        不丑就行
+    </view>
+</view>
+<view class="hobbyWrap">
+    <view class="hobbyHead">
+        <view class="icon"></view>
+        <view class="hobby">微信号</view>
+        <navigator class="edit">编辑</navigator>
+    </view>
+    <view class="Content">
+        留下微信号，相互喜欢的人才能看见
+    </view>
+</view>

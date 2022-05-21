@@ -1,0 +1,98 @@
+<view class="user_info_wrap">话题大集合</view>
+<view class="titleNow">近期话题</view>
+<view class="talkContent">
+    <view class="contentWrap">
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#立个脱单flag"
+        >#立个脱单flag</navigator>
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#第一条动态"
+        >#第一条动态</navigator>
+    </view>
+    <view class="contentWrap">
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#寻找那个Ta"
+        >#寻找那个Ta</navigator>
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#失物招领处"
+        >#失物招领处</navigator>
+    </view>
+    <view class="contentWrap">
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#男生请回答"
+        >#男生请回答</navigator>
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#女生请回答"
+        >#女生请回答</navigator>
+    </view>
+    <view class="contentWrap">
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#我们官宣啦"
+        >#我们官宣啦</navigator>
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#求助，在线等"
+        >#求助，在线等</navigator>
+    </view>
+    <view class="contentWrap">
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#心情树洞"
+        >#心情树洞</navigator>
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#二手交易"
+        >#二手交易</navigator>
+    </view>
+    <view class="contentWrap">
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#大学生的爱情观"
+        >#大学生的爱情观</navigator>
+    </view>
+</view>
+
+<view class="titleOld">历史话题</view>
+<view class="talkContent">
+    <view class="contentWrap">
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#如何看待丁克"
+        >#如何看待丁克</navigator>
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#假如回到17岁"
+        >#假如回到17岁</navigator>
+    </view>
+    <view class="contentWrap">
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#单身原因自查"
+        >#单身原因自查</navigator>
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#想恋爱的瞬间"
+        >#想恋爱的瞬间</navigator>
+    </view>
+    <view class="contentWrap">
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#第一条动态"
+        >#男生请回答</navigator>
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#第一条动态"
+        >#女生请回答</navigator>
+    </view>
+    <view class="contentWrap">
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#第一条动态"
+        >#我们官宣啦</navigator>
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#第一条动态"
+        >#求助，在线等</navigator>
+    </view>
+    <view class="contentWrap">
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#第一条动态"
+        >#心情树洞</navigator>
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#第一条动态"
+        >#二手交易</navigator>
+    </view>
+    <view class="contentWrap">
+        <navigator class="content"
+        url="../topicDetail/topicDetail?topic=#第一条动态"
+        >#看效果的</navigator>
+    </view>
+</view>

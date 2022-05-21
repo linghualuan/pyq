@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/pyq/pyq",
+    "pages/pyq-detaile/pyq-detaile",
+    "pages/user/user",
+    "pages/truesend/truesend",
+    "pages/personalData/personalData",
+    "pages/personalEdit/index",
+    "pages/talkAbout/talkAbout",
+    "pages/login/login",
+    "pages/my_pyq/index",
+    "pages/hobby/hobby",
+    "pages/lovePeople/lovePeople",
+    "pages/topicDetail/topicDetail",
+    "pages/friden-list/friden-list",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

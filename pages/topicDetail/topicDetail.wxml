@@ -1,0 +1,83 @@
+<view class="topicTop">
+    <view class="topicLeft">
+        <view class="icon iconfont icon-huati"></view>
+    </view>
+    <view class="topicRight">
+        <view class="nameWrap">
+          <text class="topicName">{{topicName}}</text>
+          <text class="HOT">HOT</text>
+        </view>
+        <view class="mySign">
+            脱单的小伙伴们，把狗粮狠狠的洒在这里吧~脱单的小伙伴们，把狗粮狠狠的洒在这里吧~
+        </view>
+    </view>
+    <view class="attendWrap">
+        <view class="personNum">
+            <text>1.1W</text> 人参与
+        </view>
+        <view class="rubish"> | </view>
+        <view class="contentNum">
+            <text>77</text> 个内容
+        </view>
+    </view>
+</view>
+<view class="typeWrap">
+    <view class="hot">热门</view>
+    <view class="new">最新</view>
+</view>
+<navigator url="../pyq-detaile/pyq-detaile?trendId={{item.trendId}}" class="friendWrap"
+wx:for="{{detailTopic}}" wx:key="*this" 
+>
+  <view class="friendHead">
+    <view class="touxiang">
+      <image class="image"></image>
+    </view>
+    <view class="friendInfo">
+      <view class="friendName">
+        {{item.userName}}
+        <text class="iconfont icon-xingbie-nan man"></text>
+      </view>
+      <view class="friendSign">这个人很酷，什么也没有留下</view>
+    </view>
+  </view>
+  <view class="friendBody">
+    <view class="friendContent">{{item.trendInfo}}</view>
+    <view class="image-list">
+      <image class="image" bindtap="previewImage" data-index="{{index}}"
+      wx:for="{{item.imgUrl}}" wx:key="*this" wx:for-item="image"
+      src="{{image}}"
+      ></image>
+      <!-- <image class="image"></image>
+      <image class="image"></image>
+      <image class="image"></image> -->
+    </view>
+  </view>
+  <view class="typeWrap">
+    <view class="contentType">
+      <text class="iconfont icon-huati"> {{item.trendLabel}}</text>
+    </view>
+  </view>
+  <view class="handle-area">
+    <view class="handleLeft">{{item.createTime}}</view>
+    <view class="handleRight" >
+      <text class="iconfont icon-fenxiang"> 分享</text>
+      <text class="iconfont icon-xiaoxi"> 211</text>
+      <text class="iconfont icon-dianzan_kuai" catchtap="clickLove" data-index="{{index}}"> 188</text>
+    </view>
+  </view>
+  <view class="friendComment">
+    <view class="comment">
+      <text class="user">用户名1 :</text>
+      <text>哇！明天不上课！</text>
+    </view>
+    <view class="comment">
+      <text class="user">用户名2 :</text>
+      <text>哇！明天不上课！我竟然才知道！</text>
+    </view>
+    <view class="comment">
+      <text class="user">用户名3 :</text>
+      <text>哇！明天不上课！</text>
+    </view>
+    <view class="more">共23条评论</view>
+  </view>
+</navigator>

@@ -1,0 +1,113 @@
+{
+    "setting": {
+        "compileHotReLoad": true
+    },
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "朋友圈页面",
+                    "pathName": "pages/pyq/pyq",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "login-登录",
+                    "pathName": "pages/login/login",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "朋友列表",
+                    "pathName": "pages/friden-list/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "朋友圈详情",
+                    "pathName": "pages/pyq-detaile/pyq-detaile",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "个人中心",
+                    "pathName": "pages/user/user",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "个人信息详情",
+                    "pathName": "pages/personalData/personalData",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "个人信息编辑",
+                    "pathName": "pages/personalEdit/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "村口话题",
+                    "pathName": "pages/talkAbout/talkAbout",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "基础资料填写",
+                    "pathName": "pages/basicInfo/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "话题详情",
+                    "pathName": "pages/topicDetail/topicDetail",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "心仪的TA",
+                    "pathName": "pages/lovePeople/lovePeople",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "兴趣爱好",
+                    "pathName": "pages/hobby/hobby",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "感情观",
+                    "pathName": "pages/emotion/emotion",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "发布页面-true",
+                    "pathName": "pages/truesend/truesend",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "我的动态",
+                    "pathName": "pages/my_pyq/index",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    },
+    "projectname": "%E6%9C%8B%E5%8F%8B%E5%9C%88%E9%A1%B9%E7%9B%AE",
+    "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html"
+}

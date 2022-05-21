@@ -1,0 +1,46 @@
+<view class="tips">
+  <text class="tips_left">分享生活点滴~</text>
+  <text class="tips_right">></text>
+</view>
+<view class="publish_main">
+  <view class="main_con">
+    <textarea name="main_content" value="{{concent}}"bindblur='bindTextAreaBlur' placeholder="分享生活、表达观点、提出困惑"></textarea>
+  </view>
+  <view class="main_iconfont">
+    <view class="upload" bindtap="handleChooseImg">
+      <view class="iconfont icon-xiangji"></view>
+      <text>图片/视频</text>
+    </view>
+    <view class="up_img_item" wx:for="{{chooseImgs}}" wx:key="*this"data-index="{{index}}">
+      <view class="up_img_wrap">
+        <image src="{{item}}"bindtap="preview" data-index="{{index}}"></image>
+        <icon bindtap="handleRemoveImg" type="clear" size="23" color="red">
+        </icon>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="publish_topic">
+  <view class="topic_left">
+    <view class="iconfont icon-huati left_item"></view>
+    <text class="left_item1">参与话题</text>
+  </view>
+  <view class="topic_right" bindtap="submit">
+    <text class="right_item1" wx:if="{{topicCotent==''}}">#选择话题</text>
+    <text class="right_item1">{{topicCotent}} ></text>
+    <!-- <text class="right_item2"></text> -->
+  </view>
+</view>
+<button class="sbu" type="primary" form-type="submit" bindtap="bindtapsubmit">发布</button>
+<view class="mask" wx:if="{{showModal}}"></view>
+<scroll-view scroll-y class="publish_flags" wx:if="{{showModal}}">
+  <view class="flags">
+    <view class="topic">
+      <text class="flags_top">选择参与话题</text>
+      <text class="flags_close" bindtap="go">×</text>
+    </view>
+    <view bindtap="handlerTopics" class="Topics" wx:for="{{topics}}" wx:key="*this" data-index="{{index}}">
+      <text>{{item}}</text>
+    </view>
+  </view>
+</scroll-view>

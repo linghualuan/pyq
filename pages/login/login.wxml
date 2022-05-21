@@ -1,0 +1,2 @@
+<button type="primary" plain bindtap="getUserProfile"> 登录 </button>
+<button type="warn" bindtap="test">测试</button>

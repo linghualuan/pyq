@@ -1,0 +1,62 @@
+<!-- 话题部分 -->
+<view class="talkWrap">
+  <view class="talkHead">
+    <text class=" iconfont icon-huati headLeft"></text>
+    <text class="headRight">话题</text>
+  </view>
+  <view class="talkContent">
+    <view class="contentWrap">
+      <navigator url="../topicDetail/topicDetail?topic=#我们官宣啦" class="content">#我们官宣啦</navigator>
+      <navigator url="../topicDetail/topicDetail?topic=#第一条动态" class="content">#第一条动态</navigator>
+    </view>
+    <view class="contentWrap">
+      <navigator class="content" url="../topicDetail/topicDetail?topic=#失物招领处">#失物招领处</navigator>
+      <navigator class="content" url="../topicDetail/topicDetail?topic=#求助，在线等">#求助，在线等</navigator>
+    </view>
+    <view class="contentWrap">
+      <navigator class="content" url="../topicDetail/topicDetail?topic=#校园无语瞬间">#校园无语瞬间</navigator>
+      <navigator url="../talkAbout/talkAbout" class="contentT iconfont icon-youjiantou">更多话题</navigator>
+    </view>
+  </view>
+</view>
+<!-- 动态列表 -->
+<navigator url="../pyq-detaile/pyq-detaile?trendId={{item.trendId}}" class="friendWrap" wx:for="{{circleList}}" wx:key="*this" bindtap="clickFriendList">
+  <view class="friendHead">
+    <view class="touxiang">
+      <image class="image"></image>
+    </view>
+    <view class="friendInfo">
+      <view class="friendName">
+        用户名
+        <text class="iconfont icon-xingbie-nan man"></text>
+      </view>
+      <view class="friendSign">这个人很酷，什么也没有留下</view>
+    </view>
+  </view>
+  <view class="friendBody">
+    <view class="friendContent">{{item.trendInfo}}</view>
+    <view class="image-list">
+      <image class="image" catchtap="previewImage" wx:for="{{item.imgUrl}}" wx:key="*this" wx:for-item="image" src="{{image}}" data-trendId="{{item.trendId}}" data-index="{{index}}"></image>
+    </view>
+  </view>
+  <view class="typeWrap">
+    <view class="contentType">
+      <text class="iconfont icon-huati" wx:if="{{item.trendLabel!=''}}"> {{item.trendLabel}}</text>
+    </view>
+  </view>
+  <view class="handle-area">
+    <view class="handleLeft">{{item.createTime}}</view>
+    <view class="handleRight">
+      <text class="iconfont icon-fenxiang"> 分享</text>
+      <text class="iconfont icon-xiaoxi"> {{item.trendCommentInfo.length}}</text>
+      <text class="iconfont icon-dianzan_kuai" catchtap="clickLove" data-index="{{item.trendId}}"> {{item.supportOpenId.length}}</text>
+    </view>
+  </view>
+  <view class="friendComment">
+    <view class="comment" wx:for="{{item.trendCommentInfo}}" wx:for-item="comment" wx:key="index" wx:if="{{index<3}}">
+      <text class="user">{{comment.userName}} : </text>
+      <text>{{comment.commentContent}}</text>
+    </view>
+    <view class="more" wx:if="{{item.trendCommentInfo.length>3}}">共 {{item.trendCommentInfo.length}} 条评论</view>
+  </view>
+</navigator>

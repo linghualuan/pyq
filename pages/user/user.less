@@ -1,0 +1,90 @@
+page{
+    background-color: rgb(231, 231, 231);
+}
+.user_info_wrap{
+    height: 30vh;
+    background-color: rgb(148, 200, 243);
+    .userHead{
+        display: flex;
+        position: relative;
+        .userIcon{
+            padding: 30rpx;
+            .image{
+                border-radius: 50%;
+                width: 120rpx;
+                height: 120rpx;
+                border: 4rpx solid white;
+                background-color: yellow;
+            }
+        }
+        .userInfo{
+            position: absolute;
+            left: 174rpx;
+            top: 43rpx;
+            .userName{
+                font-weight: 600;
+            }
+            .identify{
+                font-size: 26rpx;
+                text {
+                    // color: orange;
+                }
+            }
+        }
+        .userEdit{
+            width: 195rpx;
+            height: 50rpx;
+            text-align: center;
+            line-height: 50rpx;
+            border-radius: 10px;
+            border: 1px solid black;
+            position: absolute;
+            left: 512rpx;
+            top: 70rpx;
+            font-size: 24rpx;
+        }
+    }
+    .stateWrap{
+        // margin-left: 40rpx;
+        display: flex;
+        navigator{
+            flex: 1;
+            text-align: center;
+            .number{
+                font-weight: 600;
+            }
+            .stateName{
+                font-size: 28rpx;
+                color: rgb(136, 134, 134);
+            }
+        }
+    }
+}
+.optionsWrap{
+    border-radius: 15px;
+    width: 93%;
+    margin-top: 20rpx;
+    margin-left: 27rpx;
+    background-color: white;
+    .Options{
+        height: 80rpx;
+        line-height: 80rpx;
+        padding-left: 16rpx;
+        border-bottom: 1px solid black;
+        .jiantou{
+            margin-left: 432rpx;
+        }
+    }
+    .options{
+        height: 80rpx;
+        line-height: 80rpx;
+        padding-left: 30rpx;
+        border-bottom: 1px solid black;
+        .jiantou{
+            margin-left: 435rpx;
+        }
+        .jianTou{
+            margin-left: 398rpx;
+        }
+    }
+}
